@@ -1,4 +1,4 @@
-package com.spring.dao.impl;
+package com.spring.dao;
 
 import com.spring.entity.User;
 

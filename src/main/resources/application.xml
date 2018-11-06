@@ -4,23 +4,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="SpringDemo.com.spring.entity.User">
+    <bean id="user" class="com.spring.entity.User">
         <property name="id" value="1"/>
         <property name="username" value="wangbin" />
         <property name="password" value="123456"/>
     </bean>
 
-    <bean id="user2" class="SpringDemo.com.spring.entity.User">
+    <bean id="user2" class="com.spring.entity.User">
         <constructor-arg name="id" value="2"/>
         <constructor-arg name="username" value="XiaoNan"/>
         <constructor-arg name="password" value="54321"/>
     </bean>
 
-    <bean id="userService" class="SpringDemo.com.spring.service.impl.UserServiceImpl">
-        <constructor-arg name="user" ref="user"/>
-    </bean>
-
-    <bean id="userService_clone" class="SpringDemo.com.spring.service.impl.UserServiceImpl_clone">
-        <constructor-arg name="user" ref="user2"/>
-    </bean>
 </beans>
