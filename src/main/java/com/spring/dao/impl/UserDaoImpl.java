@@ -2,6 +2,7 @@ package com.spring.dao.impl;
 
 import com.spring.dao.UserDao;
 import com.spring.entity.User;
+import org.springframework.stereotype.Service;
 
 public class UserDaoImpl implements UserDao {
 
